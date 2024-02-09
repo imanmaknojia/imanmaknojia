@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -11470,7 +11470,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 6em 0;
   position: relative;
 }
 @media (max-width: 767.98px) {
@@ -11711,7 +11711,7 @@ textarea.form-control {
 .portfolio-wrap {
   display: block;
   width: 100%;
-  margin-bottom: 7em;
+  margin-bottom: 2em ;
 }
 .portfolio-wrap .text {
   position: relative;
@@ -12645,4 +12645,36 @@ body::-webkit-scrollbar-thumb {
 }
 body {
   overflow-x: hidden;
+}
+
+/* work content description style */
+.descforwork .contentforwork {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.descforwork .content.hidden.forwork {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.descforwork .content.forwork:not(.hidden) {
+  max-height: 1500px ; /* or enough height to show your content */
+  overflow: auto; /* scroll effect */
+}
+
+.toggle-description-btn {
+  cursor: pointer; 
+  background: #ffdf7e; 
+  color: black; 
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+  outline: none; 
+}
+
+
+.textforwork {
+  text-align: left;
 }
